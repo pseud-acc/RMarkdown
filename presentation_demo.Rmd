@@ -1,0 +1,38 @@
+---
+title: "MyFirstPresentation"
+author: "FNwobu"
+date: "19/08/2021"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## My New Slide
+Some content
+
+***
+Slide without a title
+
+## My title
+
+- Bullet one
+- Bullet two
+
+1. Item a
+2. Item b
+   a. Sub-item 1a
+   b. Sub-item 1b
+   
+## R code
+
+```{r, include = TRUE, comment = ""}
+head(mtcars)
+```
+
+## New slide w/ Plot
+
+```{r plot, include = TRUE, fig.align = "center", fig.cap = "mtcars dataset"}
+plot(mtcars$wt, mtcars$mpy, xlab = "Weight", ylab = "MPG")
+```
